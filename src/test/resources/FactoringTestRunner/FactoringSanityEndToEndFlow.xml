@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test" thread-count="1" parallel="classes">
+<test name="Cync Test Suite">
+
+	   <parameter name="selGrid" value="false"/>
+       <parameter name="nodeURL" value="http://localhost::4444/wd/console"/>
+       <parameter name="browserName" value="chrome"/>
+       <parameter name="localBrowserPath" value="chromedriver3.exe" />
+       <parameter name="url" value="https://test.cyncsoftware.com/" />
+       <parameter name="un" value="atishadmin"/>
+       <parameter name="pwd" value="Idexcel@12"/> 
+       <!-- <parameter name="homeURL" value="https://prodtest.cyncsoftware.com"/>  -->							
+		<classes>
+		<class name="com.cync.Factoring.SanityFactoringEndToEndFlowTC">
+		<methods>
+	    <include name="TC_01_FactoringClientCreation"></include>  
+		<include name="TC_02_FactoringFeeSetup"></include>
+		<include name="TC_03_InvoiceValidaitonTemplate"></include>									
+		<include name="TC_04_BasicParameters"></include>
+	    <include name="TC_05_AccountDebtor"></include>  
+	    <include name="TC_06_Mapping"></include>  
+		<include name="TC_07_FileUpload"></include> 
+		<include name="TC_08_DataUpload"></include>  
+		<include name="TC_09_ManualEntry"></include>
+		<include name="TC_10_NewInvoices"></include>
+        <include name="TC_11_DuplicateInvoices"></include> 
+		<include name="TC_12_Inelgible"></include>
+		<include name="TC_13_PreVerification"></include>  					
+	    <include name="TC_14_Verified"></include>      
+		<include name="TC_15_FundedInvoices"></include>
+		<include name="TC_16_Recourse"></include>
+	    <include name="TC_17_BatchProcess"></include>   
+	    <include name="TC_18_CreditQueue"></include> 
+	    <include name="TC_19_TermCode"></include> 
+	    <include name="TC_20_DeleteAutoCreatedTermCode"></include>
+	    <include name="TC_21_CashReceipt"></include>
+	    <include name="TC_22_ReserveRelease"></include> 
+	    <include name="TC_23_DeleteInvoiceValidationTemp"></include>
+	    <include name="TC_24_PurgingClient"></include>  
+		</methods>
+		</class>
+		</classes>
+		</test>
+		</suite>

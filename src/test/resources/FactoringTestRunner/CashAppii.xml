@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test" thread-count="1" parallel="classes">
+<test name="Cync Test Suite">
+
+	   <parameter name="selGrid" value="false"/>
+       <parameter name="nodeURL" value="http://localhost::4444/wd/console"/>
+       <parameter name="browserName" value="chrome"/>
+       <parameter name="localBrowserPath" value="chromedriver3.exe" />
+       <parameter name="url" value="https://test.cyncsoftware.com/" />
+       <parameter name="un" value="atishadmin"/>
+       <parameter name="pwd" value="Idexcel@123"/> 
+       <!-- <parameter name="homeURL" value="https://prodtest.cyncsoftware.com"/>  -->							
+		<classes>
+		<class name="com.cync.Factoring.CashApplication_Factoring_TCii">
+		<methods>
+	     <include name="TC_01_Factored_Payment_BatchProcess"></include>  
+		 <include name="TC_02_Non_Factored_Payment_BatchProcess"></include>
+		 <include name="TC_03_OnAccount_Payment_BatchProcess"></include>
+		 <include name="TC_04_Short_Payment_BatchProcess"></include>
+	     <include name="TC_05_Over_Payment_BatchProcess"></include> 
+	     <include name="TC_06_Partial_Payment_BatchProcess"></include>
+		   </methods>
+		</class>
+		</classes>
+		</test>
+		</suite>

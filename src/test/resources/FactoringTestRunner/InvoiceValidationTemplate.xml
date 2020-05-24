@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test" thread-count="1" parallel="classes">
+
+	<test name="Cync Test Suite">
+		<parameter name="selGrid" value="false" />
+		<parameter name="nodeURL" value="http://localhost::4444/wd/console" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="localBrowserPath" value="chromedriver.exe" />
+		<parameter name="url" value="https://prestaging.cyncsoftware.com" />
+	 <!-- <parameter name="username" value="adminautomation"></parameter>
+		<parameter name="password" value="Idexcel@123"></parameter> 
+		<parameter name="ClientData" value="debtor_01"></parameter>  -->
+		 
+		<classes>
+			
+			<!-- <class name="com.cync.userTS.LoginTest"/> -->
+			<class name="com.cync.Factoring.InvoiceValidationTemplateTC">
+			
+			
+
+			<methods>
+
+	 <include name="InvoiceValidationTemplate_01"></include>
+	<include name="InvoiceValidationTemplate_02"></include>
+	<!-- <include name="InvoiceValidationTemplate_03"></include>-->
+	
+	
+	<!--  <include name="InvoiceValidationTemplate_04"></include>
+	 <include name="InvoiceValidationTemplate_05"></include>
+	 <include name="InvoiceValidationTemplate_08"></include>
+	 <include name="InvoiceValidationTemplate_09"></include>-->
+	<!--  <include name="InvoiceValidationTemplate_10"></include>-->
+	 <!-- <include name="InvoiceValidationTemplate_06"></include>
+	 <include name="InvoiceValidationTemplate_07"></include>-->
+	
+	
+                   
+				</methods>  
+				
+			
+				
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

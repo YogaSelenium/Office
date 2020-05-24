@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test" thread-count="1" parallel="tests">
+
+	     <test name="Cync Test Suite_i">
+		 <parameter name="selGrid" value="false" />
+		 <parameter name="nodeURL" value="http://localhost::4444/wd/console" /> 
+		 <parameter name="browserName" value="chrome" />
+		 <parameter name="localBrowserPath" value="chromedriver.exe" />
+	     <parameter name="url" value="https://prodtest.cyncsoftware.com" />
+	     <parameter name="un" value="atish"/>
+	     <parameter name="pwd" value="Idexcel@123"/> 
+	   <classes>
+			<class name="com.cync.Factoring.FNBGriffin_TC">
+			<methods>
+	    <include name="TC_01_MultipleClientCreation"></include>
+		<!-- <include name="TC_02_Anderson_DebtorCreation"></include>
+		<include name="TC_03_Cranford_AccountDebtorCreation"></include>
+		<include name="TC_04_Enviro_DebtorCreation"></include>
+		<include name="TC_05_Expedited_DebtorCreation"></include>
+		<include name="TC_06_Glibert_DebtorCreation"></include>
+		<include name="TC_07_Logistic_DebtorCreation"></include>
+		<include name="TC_08_PandP_DebtorCreation"></include>
+		<include name="TC_09_Power_DebtorCreation"></include>
+		<include name="TC_10_RandR_DebtorCreation"></include>
+		<include name="TC_11_Trans_AccountDebtorCreation"></include> -->
+		   </methods>
+		  </class>
+		</classes>
+	</test> 
+	</suite> <!-- Suite -->

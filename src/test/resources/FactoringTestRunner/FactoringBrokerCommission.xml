@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test" thread-count="1" parallel="classes">
+
+        <test name="Cync Test Suite" preserve-order="true">
+	    <parameter name="selGrid" value="false"/>
+        <parameter name="nodeURL" value="http://localhost::4444/wd/console"/>
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="localBrowserPath" value="chromedriver.exe" />
+        <parameter name="url" value="https://prodtest.cyncsoftware.com/" />
+        <parameter name="un" value="atish"/>
+	    <parameter name="pwd" value="Idexcel@123"/>
+        									
+	<classes>
+		
+	  <class name="com.cync.Factoring.SanityFactoringEndToEndFlow">
+		
+		<methods>
+	     <include name="TC_01_FactoringClientCreation"></include>  
+		<include name="TC_02_FactoringFeeSetup"></include>
+		<include name="TC_03_InvoiceValidaitonTemplate"></include> 
+		<include name="TC_04_BasicParameters"></include> 
+	    <include name="TC_06_Mapping"></include> 
+		<include name="TC_07_FileUpload"></include>
+		<include name="TC_10_NewInvoices"></include>
+		<include name="TC_12_Inelgible"></include> 
+        <include name="TC_13_PreVerification"></include>			
+		</methods>
+		
+		</class>
+		
+	 <class name="com.cync.Factoring.FactoringBrokerCommissionTC">
+		<methods>
+	    <include name="TC_01_BrokerSetup"></include>
+		<include name="TC_02_BrokerBankInformation"></include>
+		<include name="TC_03_BrokerFeeSetup"></include>
+		</methods>
+		</class>
+		
+	 <class name="com.cync.Factoring.SanityFactoringEndToEndFlow">
+		<methods>
+	     <include name="TC_14_Verified"></include>    
+		<include name="TC_15_FundedInvoices"></include>
+		</methods>
+		</class>
+		
+	 <class name="com.cync.Factoring.FactoringBrokerCommissionTC">
+		<methods>
+	     <include name="TC_06_BrokerCommission"></include>
+		<include name="TC_07_DeleteBroker"></include>
+		</methods>
+		</class>
+		
+	 <class name="com.cync.Factoring.SanityFactoringEndToEndFlow">
+		<methods>
+	 <include name="TC_22_DeleteInvoiceValidationTemp"/>
+		<include name="TC_23_PurgingClient"/>
+		</methods>
+		</class>
+		
+	</classes>
+		
+		</test>
+		</suite>

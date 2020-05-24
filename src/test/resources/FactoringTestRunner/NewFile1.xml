@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test" thread-count="5" parallel="tests">
+
+	<test name="Cync Test Suite1">
+		<parameter name="selGrid" value="false" />
+		<parameter name="nodeURL" value="http://localhost::4444/wd/console" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="localBrowserPath" value="chromedriver.exe" />
+ 
+	    <parameter name="url" value="https://prodtest.cyncsoftware.com" />
+		
+		<classes>
+			
+			<class name="com.cync.FactoringPageBreak.FactoringPageBreak_TC">
+
+			<methods>
+			
+	 <include name="TC_01_navigatetoFactoringClientCreation_Verifypageheader"></include>
+	 <include name="TC_02_navigatetoBasicparameter_Verifypageheader"></include>
+	<include name="TC_03_navigatetoReportCommentsPage_Verifypageheader"></include>
+	    <include name="TC_04_navigatetoExceptionsPageFactoring_Verifypageheader"></include>
+	     <include name="TC_05_navigatetoCommentsPage_Verifypageheader"></include>
+	      <include name="TC_06_navigatetoActivityTicklerPageFactoring_Verifypageheader"></include>
+	       <include name="TC_07_navigatetoMappingListView_Verifypageheader"></include>
+	        <include name="TC_08_navigatetoFactoringFeeSetupPage_Verifypageheader"></include>
+	         <include name="TC_09_navigatetoFactoringChargesTemplatePage_Verifypageheader"></include>
+	          <include name="TC_10_navigatetoAutoProcessingFeeSetupPageFactoring_Verifypageheader"></include>
+	           <include name="TC_11_navigatetoBasicClientDetailPageFactoring_Verifypageheader"></include>
+	            <include name="TC_12_navigatetoMailAddressPageFactoring_Verifypageheader"></include>
+	             <include name="TC_13_navigatetoContactsPageFactoring_Verifypageheader"></include>
+	              <include name="TC_14_navigatetoMiscellaneousPageFactoring_Verifypageheader"></include>
+	               <include name="TC_15_navigatetoLegalContentPageFactoring_Verifypageheader"></include>
+	                <include name="TC_16_navigatetoClientSummaryPageFactoring_Verifypageheader"></include>
+	                 <include name="TC_17_navigatetoInactiveClientsPageFactoring_Verifypageheader"></include>
+	                  <include name="TC_18_navigatetoFactoringFileUploadsPage_Verifypageheader"></include>		
+	                  <include name="TC_19_navigatetoDataUploadPageFactoring_Verifypageheader"></include>
+	                    <include name="TC_20_navigatetoManualEntryPageFactoring_Verifypageheader"></include>	
+				</methods>  
+				
+			
+				
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Cync Test Suite2">
+		<parameter name="selGrid" value="false" />
+		<parameter name="nodeURL" value="http://localhost::4444/wd/console" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="localBrowserPath" value="chromedriver.exe" />
+ 
+	    <parameter name="url" value="https://prodtest.cyncsoftware.com" />
+		<classes>
+			<class name="com.cync.FactoringPageBreak.FactoringPageBreak_TC">
+
+			<methods>
+			 <include name="TC_21_navigatetoNewInvoicesPageFactoring_Verifypageheader"></include>
+	  <include name="TC_22_navigatetoDuplicateInvoicesPageFactoring_Verifypageheader"></include>
+	   <include name="TC_23_navigatetoIneligiblePageFactoring_Verifypageheader"></include>
+	  <include name="TC_24_navigatetoPreVerificationPageFactoring_Verifypageheader"></include>
+	     <include name="TC_25_navigatetoVerifiedPageFactoring_Verifypageheader"></include>
+	      <include name="TC_26_navigatetoFundedInvoicesPageFactoring_Verifypageheader"></include>
+	       <include name="TC_27_navigatetoRecoursePageFactoring_Verifypageheader"></include>
+	        <include name="TC_28_navigatetoCashReceiptPageFactoring_Verifypageheader"></include>
+	         <include name="TC_29_navigatetoCashReservePageFactoring_Verifypageheader"></include>
+	          <include name="TC_30_navigatetoReserveReleasePageFactoring_Verifypageheader"></include>
+	           <include name="TC_31_navigatetoFactoringChargeCodesPage_Verifypageheader"></include>
+	            <include name="TC_32_navigatetoTermCodesPageFactoring_Verifypageheader"></include>
+	             <include name="TC_33_navigatetoInvoiceStatusPageFactoring_Verifypageheader"></include>
+	              <include name="TC_34_navigatetoBucketAgingPageFactoring_Verifypageheader"></include>
+	               <include name="TC_35_navigatetoInvoiceValidationTemplatePageFactoring_Verifypageheader"></include>
+	               <include name="TC_36_navigatetoFactoringGLSetupPage_Verifypageheader"></include>
+	                 <include name="TC_37_navigatetoFactoringGLTransactionsPage_Verifypageheader"></include>
+	                  <include name="TC_38_navigatetoFactoringMigrationPage_Verifypageheader"></include>
+	                   <include name="TC_39_navigatetoCreditSourcesPageFactoring_Verifypageheader"></include>
+	                    <include name="TC_40_navigatetoFollowUpActionsPageFactoring_Verifypageheader"></include>
+	 
+				
+				</methods>  
+			</class>
+		</classes>
+	</test>
+	<test name="Cync Test Suite3">
+		<parameter name="selGrid" value="false" />
+		<parameter name="nodeURL" value="http://localhost::4444/wd/console" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="localBrowserPath" value="chromedriver.exe" />
+ 
+	    <parameter name="url" value="https://prodtest.cyncsoftware.com" />
+		<classes>
+			<class name="com.cync.FactoringPageBreak.FactoringPageBreak_TC">
+
+			<methods>
+			 <include name="TC_41_navigatetoAccountDebtorPageFactoring_Verifypageheader"></include>
+	  <include name="TC_42_navigatetoGlobalDebtorPageFactoring_Verifypageheader"></include>
+	   <include name="TC_43_navigatetoDebtorMatchingPageFactoring_Verifypageheader"></include>
+	    <include name="TC_44_navigatetoLetterProcessingPageFactoring_Verifypageheader"></include>
+	     <include name="TC_45_navigatetoLetterTrackingPageFactoring_Verifypageheader"></include>
+	      <include name="TC_46_navigatetoLetterAuditPageFactoring_Verifypageheader"></include>
+	       <include name="TC_47_navigatetoACDebtorStatusPageFactoring_Verifypageheader"></include>
+	        <include name="TC_48_navigatetoBrokerSetupPageFactoring_Verifypageheader"></include>
+	         <include name="TC_49_navigatetoBrokerBankInformationPageFactoring_Verifypageheader"></include>
+	          <include name="TC_50_navigatetoBrokerFeeSetupPageFactoring_Verifypageheader"></include>
+	           <include name="TC_51_navigatetoBrokerCommissionPageFactoring_Verifypageheader"></include>
+	            <include name="TC_52_navigatetoProcessingHistoryPageFactoring_Verifypageheader"></include>
+	             <include name="TC_53_navigatetoWarningPageFactoring_Verifypageheader"></include>
+	              <include name="TC_54_navigatetoFundsEmployedPageFactoring_Verifypageheader"></include>
+	               <include name="TC_55_navigatetoCreditQueuePageFactoring_Verifypageheader"></include>
+	                <include name="TC_56_navigatetoCollectionTicklerPageFactoring_Verifypageheader"></include>
+	                 <include name="TC_57_navigatetoBatchProcessScreenPageFactoring_Verifypageheader"></include>
+	                  <include name="TC_58_navigatetoUngrouped_checksPage_Verifypageheader"></include>
+	                   <include name="TC_59_navigatetoProcessedBatchesPages_Verifypageheader"></include>
+	                    <include name="TC_60_navigattoDepositUploadPage_Verifypageheader"></include>
+				</methods>  
+			</class>
+		</classes>
+	</test>
+	<test name="Cync Test Suite4">
+		<parameter name="selGrid" value="false" />
+		<parameter name="nodeURL" value="http://localhost::4444/wd/console" />
+		<parameter name="browserName" value="chromedriver.exe" />
+		<parameter name="localBrowserPath" value="chromedriver.exe" />
+ 
+	    <parameter name="url" value="https://prodtest.cyncsoftware.com" />
+		<classes>
+			<class name="com.cync.FactoringPageBreak.FactoringPageBreak_TC">
+
+			<methods>
+			 <include name="TC_61_navigattoRepaymentReportPage_Verifypageheader"></include>
+	<include name="TC_62_navigattoCreditMemoAdjustmentPage_Verifypageheader"></include>
+	   <include name="TC_63_navigattoCreditMemoHistoryPage_Verifypageheader"></include>
+	    <include name="TC_64_navigattoClientFundedARAgingReport_Verifypageheader"></include>
+	     <include name="TC_65_navigattoStatementofAccountsReport_Verifypageheader"></include>
+	      <include name="TC_66_navigattoClientsARAgingReport_Verifypageheader"></include>
+	       <include name="TC_67_navigattoClientsARBalanceReport_Verifypageheader"></include>
+	        <include name="TC_68_navigattoOpeninvoicesbyScheduleReport_Verifypageheader"></include>
+	         <include name="TC_69_navigattoClientsInvoiceStatusReport_Verifypageheader"></include>
+	          <include name="TC_70_navigattoPendingFundProcessingReport_Verifypageheader"></include>
+	           <include name="TC_71_navigattoDailyFundingsReport_Verifypageheader"></include>
+	            <include name="TC_72_navigattoInvoicesAwaitingFundingReport_Verifypageheader"></include>
+	             <include name="TC_73_navigattoInvoicesPendingVerificationReport_Verifypageheader"></include>
+	              <include name="TC_74_navigattoFundingBatchReport_Verifypageheader"></include>
+	               <include name="TC_75_navigattoPurchaseSummaryReport_Verifypageheader"></include>
+	                <include name="TC_76_navigattoProcessingStatusReport_Verifypageheader"></include>
+	                 <include name="TC_77_navigattoVerificationReport_Verifypageheader"></include>
+	                  <include name="TC_78_navigattoFeeReport_Verifypageheader"></include>
+	                   <include name="TC_79_navigattoClientActivityDetailReport_Verifypageheader"></include>
+	                    <include name="TC_80_navigattoEOMClientAnalysisReport_Verifypageheader"></include>
+	 
+				</methods>  
+			</class>
+		</classes>
+	</test>
+	<test name="Cync Test Suite5">
+		<parameter name="selGrid" value="false" />
+		<parameter name="nodeURL" value="http://localhost::4444/wd/console" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="localBrowserPath" value="chromedriver.exe" />
+ 
+	    <parameter name="url" value="https://prodtest.cyncsoftware.com" />
+		<classes>
+			<class name="com.cync.FactoringPageBreak.FactoringPageBreak_TC">
+
+			<methods>
+			 
+	 <include name="TC_81_navigattoCommentsReport_Verifypageheader"></include>
+	 <include name="TC_82_navigattoDailyActivityAllClientsReport_Verifypageheader"></include>
+	  <include name="TC_83_navigattoReserveActivityReport_Verifypageheader"></include>
+	   <include name="TC_84_navigattoClientSummaryReport_Verifypageheader"></include>
+	    <include name="TC_85_navigattoCashReserveReport_Verifypageheader"></include>
+	     <include name="TC_86_navigattoDebtorConcentrationReport_Verifypageheader"></include>
+	      <include name="TC_87_navigattoPaymentHistoryReport_Verifypageheader"></include>
+	       <include name="TC_88_navigattoFollowUpReport_Verifypageheader"></include>
+	        <include name="TC_89_navigattoPortfolioARBalanceReport_Verifypageheader"></include>
+	         <include name="TC_90_navigattoEOMPortfolioAnalysisReport_Verifypageheader"></include>
+	          <include name="TC_91_navigattoARAllDebtorsReport_Verifypageheader"></include>
+	           <include name="TC_92_navigattoCashReceiptRegisterReport_Verifypageheader"></include>
+	            <include name="TC_93_navigattoOpenBatchReconciliationReport_Verifypageheader"></include>
+	             <include name="TC_94_navigattoUnappliedCashReport_Verifypageheader"></include>
+	              <include name="TC_95_navigattoCashJournalAdjustmentReport_Verifypageheader"></include>
+ 	               <include name="TC_96_navigattoDailyTransactionsReconciliationReport_Verifypageheader"></include>
+	                <include name="TC_97_navigattoBrokerOutstandingInvoicesReport_Verifypageheader"></include>
+				
+				</methods>  
+			</class>
+		</classes>
+	</test>
+	
+</suite> <!-- Suite -->

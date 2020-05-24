@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test" thread-count="1" parallel="tests">
+
+	     <test name="Cync Test Suite_i">
+		 <parameter name="selGrid" value="false" />
+		 <parameter name="nodeURL" value="http://localhost::4444/wd/console" /> 
+		 <parameter name="browserName" value="chrome" />
+		 <parameter name="localBrowserPath" value="chromedriver3.exe" />
+	     <parameter name="url" value="https://prodtest.cyncsoftware.com" />
+	     <parameter name="un" value="atishadmin"/>
+	     <parameter name="pwd" value="Idexcel@123"/> 
+	   <classes>
+			<class name="com.cync.Factoring.Reverse_RecourseTC">
+			<methods>
+	    <include name="TC_01_ReverseFromRecoursePage"></include>  
+		<include name="TC_02_VerifiedPage"></include>
+		   </methods>
+		  </class>
+		</classes>
+	</test> 
+	</suite> <!-- Suite -->
